@@ -17,7 +17,7 @@ Upload it to Github and share a link in Github with your exercise
 class Main {
   public static void main (String [] args) {
 		
-		String pal = "goroddorog";
+		String pal = "gorod dorog";
 		int startPos=0;
 		int endPos = pal.length() -1;
 		
