@@ -39,7 +39,7 @@ class Main {
 		
 		if(isPal==true)
 		{
-			System.out.println(pal+ " is a plindrome!");
+			System.out.println(pal+ " is a palindrome!");
 		}
 		else 
 		{
