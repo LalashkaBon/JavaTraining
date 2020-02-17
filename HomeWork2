@@ -1,0 +1,18 @@
+class Main {
+    public static void main(String[] args) {
+        aisuluu("Even");
+        aisuluu("Odd");
+
+    }
+
+    public static void aisuluu(String word) {
+        String name = word;
+        int count = name.length();
+
+        if (count % 2 ==0) {
+        System.out.println("The string is even");
+        } else {
+        System.out.println("The string is not even");
+        }
+    }
+}
