@@ -1,0 +1,64 @@
+// Homework 2 
+// Part 1
+Create a Car class.
+Create the following attributes:
+Country of car
+Model
+Maker
+
+Create methods:
+Set country – should set a country for car object
+Set model – should set a model for car object
+Set maker – – should set a maker for car objectGet country – Should return country of car
+Get model – Should return model of car
+Get maker – – Should return maker of car
+
+public class Main {
+
+    public static void main(String[] args) {
+        class Car {
+
+            String country;
+            String model;
+            String maker;
+
+            public String getCountry(){
+                return country;
+            }
+
+            public void setCountry(String newCountry){
+                country = newCountry;
+            }
+
+            public String getModel(){
+                return model;
+            }
+
+            public void setModel(String newModel){
+                model = newModel;
+            }
+
+            public String getMaker(){
+                return maker;
+            }
+
+            public void setMaker(String newMaker){
+                maker = newMaker;
+            }
+        }
+
+        class Solution {
+            public void main(String[] args) {
+                Car audi = new Car();
+                audi.setCountry("United States");
+                audi.setModel("2020");
+                audi.setMaker("Audi");
+
+                System.out.println(audi.getCountry());//United States
+                System.out.println(audi.getModel());//2020
+                System.out.println(audi.getMaker()); //Audi
+            }
+        }
+
+    }
+}
