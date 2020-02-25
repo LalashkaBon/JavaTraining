@@ -1,0 +1,75 @@
+//Create 3 cars objects
+//Audi, bmw, audi
+//set parameters to them and print country, model and maker
+
+
+class Car {
+
+       
+           String country;
+           String model;
+           String maker;
+     public String getCountry(){
+                return country;
+            }
+
+      public void setCountry(String newCountry){
+                country = newCountry;
+            }
+
+      public String getModel(){
+                return model;
+            }
+
+      public void setModel(String newModel){
+                model = newModel;
+            }
+
+      public String getMaker(){
+                return maker;
+            }
+
+     public void setMaker(String newMaker){
+                maker = newMaker;
+            }
+}
+ class Solution {
+ 
+   
+     public static void main(String[] args) {
+     
+
+      Car audi = new Car();
+      audi.setCountry("United States");
+      audi.setModel("2020");
+      audi.setMaker("Audi");
+
+      Car bmv = new Car ();
+      bmv.setCountry("German");
+      bmv.setModel("2019");
+      bmv.setMaker("bmv");
+
+      Car toyota = new Car();
+      toyota.setCountry("Japan");
+      toyota.setModel("2018");
+      toyota.setMaker("toyota");
+  
+      System.out.println(audi.getCountry());
+      System.out.println(audi.getModel());
+      System.out.println(audi.getMaker()); 
+              
+              
+      System.out.println(bmv.getCountry());
+      System.out.println(bmv.getModel());
+      System.out.println(bmv.getMaker());
+              
+              
+      System.out.println(toyota.getCountry());
+      System.out.println(toyota.getModel());
+      System.out.println(toyota.getMaker());
+
+  
+      }
+     
+
+}
