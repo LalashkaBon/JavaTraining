@@ -1,0 +1,27 @@
+//Remove a value from HashMap based on key
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+
+                Map< String, Integer > courseMap = new HashMap < String, Integer > ();
+                courseMap.put("Java", 1);
+                courseMap.put("C", 2);
+                courseMap.put("C++", 3);
+                System.out.println("Before removal");
+                printMap(courseMap);
+                
+                courseMap.remove("Java");
+                System.out.println("After removal");
+                printMap(courseMap);
+            }
+            private static void printMap(Map < String, Integer > courseMap) {
+                for (String s: courseMap.keySet()) {
+                    System.out.println(s);
+                }
+            }
+    }
