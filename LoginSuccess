@@ -1,0 +1,21 @@
+mport org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+
+public class LoginTests extends BaseTest {
+
+    @Test
+    public void LoginSuccessTest() throws InterruptedException {
+
+        openLoginPage();
+        enterEmail("azat@testpro.io");
+        enterPassword("Password1!");
+        clickSubmit();
+
+        String actualText = getErrorText(".alert.alert-danger");
+        Assert.assertEquals(actualText, "Username or password is incorrect");
+    }
+
+}
